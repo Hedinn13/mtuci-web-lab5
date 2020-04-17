@@ -4,6 +4,11 @@ body {
     color: #ffffff;
 }
 
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .header img {
     display: block; 
     width: 318px; 
@@ -28,4 +33,61 @@ body {
 
 .article-created-date { 
     text-align: right;
-}    
+}
+
+.content,
+.content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content h1,
+.content form,
+input, textarea {
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.content h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.content p { margin: 0 auto;}
+
+input, textarea {
+    margin: 12.5px 35%;
+}
+
+input:nth-child(2) {
+    font-size: 16px;
+    height: 30px;
+    text-indent: 1rem;
+}
+
+input:nth-child(4) {
+    font-size: 22px;
+    font-weight: 700;
+    height: 50px;
+}
+
+textarea {
+    font-size: 14px;
+    height: 30vh;
+    padding: 10px;
+    text-indent: 1rem;
+}
+
+/* .content form {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+} */

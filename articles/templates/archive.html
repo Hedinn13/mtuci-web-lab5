@@ -9,6 +9,7 @@
             <img src="{% static 'media/1.png' %}" alt="Logo" />
         </div>
         <div class="archive">
+            <a href="/article/new/">Create Post</a>
             {% for post in posts %}
             <div class="one-post">
                 <h2 class="post-title"><a href="{% url 'get_article' post.id %}">{{ post.title }}</a></h2>
